@@ -1,7 +1,7 @@
 # Copyright (c) HashiCorp, Inc.
 # SPDX-License-Identifier: MPL-2.0
 
-variable "tfc_aws_audience" {
+variable "tfc_audience" {
   type        = string
   default     = "aws.workload.identity"
   description = "The audience value to use in run identity tokens"
@@ -21,7 +21,7 @@ variable "tfc_organization_name" {
 variable "tfc_project_name" {
   type        = string
   default     = "Default Project"
-  description = "The project under which a workspace will be created"
+  description = "The project under which a stack will be created"
 }
 
 variable "github_token" {
